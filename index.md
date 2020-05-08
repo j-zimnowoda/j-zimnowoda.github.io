@@ -1,4 +1,5 @@
 # Hello World
 
 
-[Shell](shell.md)
+- [Shell](shell.md)
+- [Shortcuts](shortcuts.md)
