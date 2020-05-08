@@ -13,6 +13,8 @@
 | Reopen last tab | ⌘ + z |
 | Move to tab on right | Shift + ⌘ + ] |
 | Move to tab on left | Shift + ⌘ + [ |
+| Show the previous page| ⌘ + ←| 
+| Show the next page| ⌘ + →| 
 | Show or Hide the Bookmarks sidebar | Control + ⌘ + 1 |
 | Show or Hide the Reading List sidebar | Control + ⌘ + 2 |
 | Add page to reading list | Shift + ⌘ + D |
