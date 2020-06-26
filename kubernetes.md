@@ -6,4 +6,9 @@ stern --all-namespaces -l app=harbor --tail=1 --exclude=kube-probe --exclude=/ap
 
 # Ingress
 ## To inspect all ingress hosts and paths
+```
 ka get ing -o json | jq -r '.items[]| .metadata.name, .spec.rules[]'
+```
+```
+ka get ing -o json | jq -r '.items[]| .spec.rules[] | select(.host == "myhost.domain.com")'
+```
