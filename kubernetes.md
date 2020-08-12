@@ -18,4 +18,9 @@ ka get ing -o json | jq -r '.items[]| .spec.rules[] | select(.host == "myhost.do
 
 ```
 ka get po -o=jsonpath='{range .items[?(@.spec.priorityClassName=="system-cluster-critical")]}{.metadata.name}{"\n"}{end}'
-``
+```
+
+## Get all pods with custom columns
+```
+ka get po -o=custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,PRIORITY_CLASS:.spec.priorityClassName
+```
